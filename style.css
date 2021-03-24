@@ -1,0 +1,174 @@
+.wrapper {
+  display: grid;
+  width: 700px;
+  height: 900px;
+  grid-template-rows: 40px 200px 270px 250px 140px;
+  grid-template-areas:
+    "h"
+    "B"
+    "b"
+    "r"
+    "i";
+}
+.header {
+  grid-area: "h";
+  background-color: black;
+  display: flex;
+}
+.banner {
+  grid-area: "B";
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.blog {
+  grid-area: "b";
+  border-bottom: 1px solid grey;
+  display: flex;
+}
+.rblog {
+  grid-area: "r";
+  border-bottom: 1px solid grey;
+  display: flex;
+}
+.images {
+  grid-area: "i";
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-bar {
+  height: 100%;
+  width: 65%;
+  display: flex;
+}
+.nav-bar > .child {
+  color: white;
+  padding: 3px;
+  margin: 8px 0;
+  font-size: 0.8rem;
+}
+.social-media {
+  display: flex;
+}
+.social-media > .subscribe {
+  display: block;
+  color: white;
+  height: 50%;
+  margin: 9px 50px 8px 5px;
+  border: 1px solid white;
+  background-color: black;
+  border-radius: 8px;
+}
+.social-media > .child {
+  color: white;
+  padding: 3px;
+  margin: 8px 0;
+}
+.banner > .child {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 20%;
+}
+.banner .heading {
+  font-size: 3rem;
+}
+
+.blog > .image {
+  border: 1px solid whitesmoke;
+  width: 65%;
+  margin: 1rem 1rem;
+  background-color: whitesmoke;
+}
+.blog img {
+  display: block;
+  margin: auto;
+}
+.blog > .textarea {
+  width: 35%;
+  margin: 1rem 1rem;
+
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.textarea > span {
+  font-size: 10px;
+  color: blue;
+}
+.textarea > .heading {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: black;
+}
+.textarea > .content {
+  color: grey;
+}
+
+.textarea > .writer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.details span {
+  font-size: 12px;
+  padding-right: 1rem;
+}
+.rblog > .child {
+  flex-grow: 1;
+  height: 90%;
+  width: 27%;
+  margin: auto 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rblog .img {
+  width: 100%;
+  background-color: whitesmoke;
+}
+.img img {
+  display: block;
+  margin: auto;
+}
+
+.rblog > .contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-;
+  position: relative;
+}
+
+.contents > .heading {
+  font-size: 15px;
+  font-weight: bold;
+}
+.contents > .prehead {
+  font-size: 10px;
+  color: blue;
+}
+.contents > .text {
+  font-size: 11.655px;
+  color: grey;
+  padding: 0.1rem;
+}
+.contents .detail {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+}
+
+.detail span {
+  font-size: 12px;
+  padding-right: 1rem;
+}
+.images > div {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  background-color: whitesmoke;
+}
